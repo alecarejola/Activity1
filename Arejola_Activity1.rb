@@ -18,7 +18,7 @@ phoneNumber = gets.chomp.to_i
 puts "-------------------------------------------------------"
 
 #Menu Page
-while choice <= 3
+while choice <= 3 && choice >= 0
   puts "Welcome " + name.to_s + "!"
   puts "Menu: "
   puts "1.) Deposit"
@@ -68,7 +68,7 @@ while choice <= 3
     puts "Thank you for using the ATM Machine!"
     puts "-------------------------------------------------------"
   #Error of choice
-  elsif choice >= 5
+  elsif choice >= 5 || choice <= 0
     puts "Invalid number! Please try 1-4."
     puts "-------------------------------------------------------"
     choice = 0
