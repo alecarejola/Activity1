@@ -64,8 +64,13 @@ while choice <= 3
     puts "Welcome to Balance Checking Page!"
     puts "Your balance is " + balance.to_s
     puts "-------------------------------------------------------"
-  else choice == 4
+  elsif choice == 4
     puts "Thank you for using the ATM Machine!"
     puts "-------------------------------------------------------"
+  #Error of choice
+  elsif choice >= 5
+    puts "Invalid number! Please try 1-4."
+    puts "-------------------------------------------------------"
+    choice = 0
   end
 end
